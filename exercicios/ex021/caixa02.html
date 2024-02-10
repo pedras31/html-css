@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>grouping tags</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: dimgray;
+		}
+
+		header {
+			background-color: white;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		h1 {
+			box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.5);
+			text-align: center;
+		}
+
+		nav {
+			background-color: rgb(94, 92, 92);
+			padding: 3px;
+			box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.308);
+		}
+
+		nav > a {
+			text-decoration: none;
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			margin-right: 15px;
+			
+			/* 
+			O box-shadow requer os valores do deslocamento da sombra
+			em: horizontal, vertical, espalhamento e sombra.
+			*/
+		}
+
+		nav > a:hover {
+			text-decoration: underline;
+		}
+
+		main {
+			background-color: white;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 15px;
+			box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.388);
+		}
+
+		article {
+			background-color: rgb(172, 170, 170);
+		}
+
+		article > aside {
+			background-color: rgb(87, 87, 87);
+		}
+
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+			padding: 4px;
+			margin: 0px;
+
+		}
+
+		footer > p {
+			margin: 0px;
+		}
+
+		div#bola {
+			height: 100px;
+			width: 100px;
+			background-color: white;
+			margin: 10px;
+			border-radius: 50%;
+			
+		}
+	</style>
+</head>
+<body>
+	<!-- A tag header significa "cabeçaho" -->
+
+	<header>
+		<h1>Meu site</h1>
+		<nav>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+		</nav>
+	</header>
+
+	<!-- A tag main se trata da parte principal -->
+
+	<main>
+		<section id="assuntos">
+
+		</section>
+		<section id="noticias">
+			<article>
+				<h2>Noticias do meu penis</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas exercitationem quod culpa corrupti. Nam, impedit! Et quod unde dignissimos non reiciendis id provident corrupti quam? Natus et vitae consectetur soluta!</p>
+				<aside>
+					<p>Artigo escrito por pedras skm</p>
+				</aside>
+			</article>
+			<article>
+
+			</article>
+		</section>
+	</main>
+
+	<!-- A tag footer significa "roda pé" -->
+
+	<footer>
+		<p>Desenvolvido por pedras skm</p>
+	</footer>
+	<div id="bola"></div>
+</body>
+</html>
