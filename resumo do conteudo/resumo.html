@@ -1,0 +1,100 @@
+<!-- Para por o código padrão com facilidade basta digitar "!" e dar enter. exemplo: -->
+
+<!-- Em HTML temos "tags" a maioria com "abertura" e "fechamento". Elas podem receber atributos para complementar essa tags, q ficam localizados após a tag porém antes do ">" da primeira tag -->
+
+<!DOCTYPE html> <!-- Diz q o conteúdo é em HTML -->
+<html lang="pt-br"> <!-- Linguagem do site (sempre mude para "pt-br", deixa em português) -->
+<head> <!-- Head é área de configurações do site -->
+	<meta charset="UTF-8"> <!-- Significa a compatibilidade do site com acentos e caracteres especiais --> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resumo</title> <!-- Title significa o Título q vai ficar na aba do site -->
+	<link rel="shortcut icon" href="favicon.ico" type=""> <!-- O "href" é onde você vai por o seu ícone do seu site, que fica do lado do seu título. tem q ter um arquivo .ico na sua pasta ou pegar o link do ícone.-->
+
+	<link rel="stylesheet" href="style.css"> <!-- o "link:css" serve para por os parametros de CSS em um parte separada. Caso não queira basta por a tag <style> no seu <head> e por as configurações -->
+</head>
+
+<body> <!-- Área de conteúdo do site -->
+	<h1> Meu Título principal </h1> <!-- A tag "heading" vai de 1 (h1) à 6 (h6). É o título das coisas sendo 1 o maior e o 6 o menor. seguem uma hierarquia. -->	
+	<p> Um parágrafo qualquer </p> <!-- A tag <p> serve para adicionar um parárgafo de texto. Não conta os espaços antes e depois da sentença. -->
+
+	<p> Outro <br> texto </p> <!-- A tag <br> serve para quebrar a linha e fazer com que o texto prossiga na linha de baixo -->
+
+	<p>Texto em <b> Negrito </b> </p> <!-- Para deixar algo em negrito podemos usar <b> </b> ou também a tag <strong> </strong>. os dois dão na mesma -->
+
+	<p>Texto em <i> Itálico </i> </p> <!-- Para deixar algo em itálico podemos usar <i> </i>. A tag <em> serve o mesmo como itálico ent da na mesma.  -->
+
+	<p> Texto <mark>marcado</mark> </p> <!-- Para deixar algo marcado podemos usar <mark> </mark>. -->
+
+	<p> Texto <del>riscado</del> </p> <!-- A tag <del> serve para riscar as palavras-->
+
+	<p> Texto <ins>sublinhado</ins> </p> <!-- A tag <ins> serve para sulinhar as palavras-->
+
+	<p> Texto sobrescrito. Exemplo: X<sup>2</sup> </p> <!-- A tag <sup> serve para deixa as palavras acima -->
+
+	<p> Texto sobrescrito. Exemplo: H<sub>2</sub>O</p> <!-- A tag <sub> serve para deixa as palavras abaixo -->
+
+	<!-- A tag <pre> agrupando o seu parárgafo faz com que o texto contido na tag seja escrito da forma que está escrita, aceitando todos os espaços contido. -->
+
+		<pre>
+			<p>
+				                                             teste
+			</p>
+		</pre>
+
+	<!-- A tag <img> serve para adiconar imagens -->
+
+	<img src="" alt=""> 
+
+	<!-- "src" é o arquivo da imagem, ele pode estar contido na pasta ou ser um link -->
+	<!-- "alt" não é necessária porém caso o nabegador nao carregue a imagem vai aparecer o texto ali como referência -->
+
+	<picture>
+		<source media="" srcset="" type="image/png">
+		<!-- isso é útil para quando você quer diminuir o navegador e a imagem se adaptar.
+		media = parametros como largura ou altura mínima ou máxima
+		srcset = aquivo de imagem na pasta ou link
+		type = formato da imagem como "image/fds" sendo fds: png, jpg
+		-->
+		<img src="" alt="">
+	</picture>
+
+	<!-- A tag <picture> ou <pic>, da na mesma, funcionam como uma imagem, assim como a tag <img>, porém ela permite varias "sources", varios tamanhos e opções da imagem. -->
+
+	<p> <abbr title="TEXTO"> Ponha o mouse aqui </abbr></p>
+	<!-- A tag "abbr" é de abreviação, o que tiver em "title" será o q vai aparecer quando passar o mouse por cima -->
+
+	<p><bdo dir="ltr">Texto qualquer </bdo> </p>
+
+	<!-- A tag <bdo> seleciona o texto e deixa as letras na ordem desejada, da esqueda para a direita ou da direita para a esquerda -->
+	
+
+	<!-- A tag <ol> serve para organizar listas em forma ordenada. Já a tag <ul> serve para listas não ordenadas . usa a tag <li> para separar intens da lista -->
+
+	<!-- A formataçao TYPE entre a tag <ol> dps do "l" serve para calssificar a lista em 5 opções-->
+
+	<!-- Caso for usar o TYPE podemos fazer com que começe com um ponto especifico de partida. tipo em uma lista numerica começar com o numero 5. utilizando a formataçao START, assim como a formatação TYPE-->
+	
+	<ol start="" type="">
+		<li>um</li>
+		<li>dois</li>
+		<li>três</li>
+	</ol>
+
+	<ul>
+		<li>quatro</li>
+		<li>cinco</li>
+	</ul>
+
+	<a href="#"> Link aqui </a> <!-- A tag <a> serve como "ancora", ela rediona para um link ao clicar. O "href" é onde vc vai por o link ou o arquivo para redionar. -->
+
+	<!-- Ao por o atributo "target" e em seguida "_blank", te manda para o site sem fechar o sobrepor o seu site. -->
+
+	<p>Áudio aqui</p>
+	<audio src="" controls > A </audio> <!-- por o parametro "controls" -->
+
+	<video src="" controls> </video>
+	<!-- Para adicionar videos usamos o parametro "video". "src" é o arquivo de video ou o link-->
+
+</body>
+</html>
